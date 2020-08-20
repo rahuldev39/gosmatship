@@ -2488,6 +2488,7 @@ h6 {
 .genric-btn.e-large {
   padding: 0 40px;
   line-height: 50px;
+  font-size: 1rem;
 }
 .genric-btn.large {
   line-height: 45px;
@@ -3965,4 +3966,28 @@ h6 {
   margin-bottom: 4px;
   font-weight: 600;
   font-size: 14px;
+}
+
+.border-danger{
+  border: 1px solid #e32222;
+}
+
+.text-danger {
+  color: #e32222!important;
+}
+
+
+@media(min-width:992px){
+  .result-card .card-pice {
+    border-left: 1px solid #dee2e6;
+  }
+}
+@media(max-width:992px){
+  .result-card .card-pice {
+    border-top: 1px solid #dee2e6;
+    margin-top: 30px;
+  }
+  .result-card .logo-img img {
+    width: 135px;
+}
 }

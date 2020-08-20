@@ -14,7 +14,7 @@
       });
     }
   }
-  navbarFixed();
+  // navbarFixed();
   if ($(".active_testimonial").length) {
     $(".active_testimonial").owlCarousel({
       items: 1,
@@ -66,7 +66,9 @@
     ],
   });
 
-
+  $(function () {
+    $('[data-toggle="tooltip"]').tooltip()
+  })
   
 })(jQuery);
 
