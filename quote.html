@@ -199,13 +199,14 @@
           <div class="col-md-3">
             <div class="form-group">
               <label>Weight</label>
-              <input type="text" class="form-control" placeholder="Weight (KG)">
+              <input type="text" class="form-control is-invalid" placeholder="Weight (KG)" value="1234">
+              <div  class="invalid-feedback">Weight not greater then 999kg.</div>
             </div>
           </div>
           <div class="col-md-3">
             <div class="form-group">
               <label>Height</label>
-              <input type="text" class="form-control" placeholder="Height (CM)">
+              <input type="text" class="form-control " placeholder="Height (CM)">
             </div>
           </div>
           <div class="col-md-3">
@@ -223,7 +224,8 @@
           <div class="col-md-9">
             <div class="form-group">
               <label>Contents*</label>
-              <input type="text" class="form-control" placeholder="Please provide a clear description of the item(s) in your parcel.">
+              <input type="text" class="form-control is-invalid" placeholder="Please provide a clear description of the item(s) in your parcel.">
+              <div  class="invalid-feedback">Content Discription required</div>
             </div>
           </div>
   
@@ -246,7 +248,7 @@
       </div>
 
 
-      <div class="card  mb-5 border-danger  shadow-sm">
+      <div class="card  mb-5 border-dark shadow-sm">
         <div class="card-body">
           <div class="row">
             <div class="col-md-6">
