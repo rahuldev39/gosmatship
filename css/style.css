@@ -2109,12 +2109,9 @@ ul {
   margin-bottom: 30px;
 }
 .form-contact .form-control {
-  border: 1px solid #f0e9ff;
   border-radius: 5px;
   height: 48px;
   padding-left: 18px;
-  font-size: 13px;
-  background: 0 0;
 }
 .form-contact .form-control:focus {
   outline: 0;
