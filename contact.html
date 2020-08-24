@@ -260,7 +260,7 @@
             </form>
           </div>
           <div class="col-lg-6">
-            <div id="map" style="height: 100%" class="rounded shadow-sm border"></div>
+            <div id="map" style="height: 100%" class="rounded shadow-sm"></div>
           </div>
         </div>
       </div>
@@ -433,37 +433,18 @@
           // This is where you would paste any style found on Snazzy Maps.
           styles: [
     {
-        "featureType": "all",
-        "elementType": "labels.text.fill",
+        "elementType": "geometry",
         "stylers": [
             {
-                "saturation": 36
+                "visibility": "simplified"
             },
             {
-                "color": "#e72727"
-            },
-            {
-                "lightness": 40
+                "hue": "#ff0000"
             }
         ]
     },
     {
-        "featureType": "all",
-        "elementType": "labels.text.stroke",
-        "stylers": [
-            {
-                "visibility": "on"
-            },
-            {
-                "color": "#e72727"
-            },
-            {
-                "lightness": 16
-            }
-        ]
-    },
-    {
-        "featureType": "all",
+        "featureType": "road",
         "elementType": "labels.icon",
         "stylers": [
             {
@@ -472,128 +453,35 @@
         ]
     },
     {
-        "featureType": "administrative",
-        "elementType": "geometry.fill",
+        "featureType": "transit.station",
+        "elementType": "labels.icon",
         "stylers": [
             {
-                "color": "#e72727"
-            },
-            {
-                "lightness": 20
-            }
-        ]
-    },
-    {
-        "featureType": "administrative",
-        "elementType": "geometry.stroke",
-        "stylers": [
-            {
-                "color": "#e72727"
-            },
-            {
-                "lightness": 17
-            },
-            {
-                "weight": 1.2
-            }
-        ]
-    },
-    {
-        "featureType": "landscape",
-        "elementType": "geometry",
-        "stylers": [
-            {
-                "color": "#e72727"
-            },
-            {
-                "lightness": 20
+                "visibility": "off"
             }
         ]
     },
     {
         "featureType": "poi",
-        "elementType": "geometry",
         "stylers": [
             {
-                "color": "#e72727"
-            },
-            {
-                "lightness": 21
+                "visibility": "off"
             }
         ]
     },
     {
-        "featureType": "road.highway",
-        "elementType": "geometry.fill",
+        "featureType": "administrative",
         "stylers": [
             {
-                "color": "#e72727"
-            },
-            {
-                "lightness": 17
-            }
-        ]
-    },
-    {
-        "featureType": "road.highway",
-        "elementType": "geometry.stroke",
-        "stylers": [
-            {
-                "color": "#e72727"
-            },
-            {
-                "lightness": 29
-            },
-            {
-                "weight": 0.2
-            }
-        ]
-    },
-    {
-        "featureType": "road.arterial",
-        "elementType": "geometry",
-        "stylers": [
-            {
-                "color": "#e72727"
-            },
-            {
-                "lightness": 18
-            }
-        ]
-    },
-    {
-        "featureType": "road.local",
-        "elementType": "geometry",
-        "stylers": [
-            {
-                "color": "#e72727"
-            },
-            {
-                "lightness": 16
-            }
-        ]
-    },
-    {
-        "featureType": "transit",
-        "elementType": "geometry",
-        "stylers": [
-            {
-                "color": "#e72727"
-            },
-            {
-                "lightness": 19
+                "visibility": "simplified"
             }
         ]
     },
     {
         "featureType": "water",
-        "elementType": "geometry",
         "stylers": [
             {
-                "color": "#e72727"
-            },
-            {
-                "lightness": 17
+                "visibility": "off"
             }
         ]
     }
@@ -609,9 +497,9 @@
 
         // Let's also add a marker while we're at it
         var marker = new google.maps.Marker({
-          position: new google.maps.LatLng(28.4584, 77.0567, 10),
+          position: new google.maps.LatLng(28.4595, 77.0266, 10),
           map: map,
-          title: "Hobbes Dog Care Technologies Pvt. Ltd",
+          title: "GosmartShip Pvt. Ltd.",
         });
 
         var info = new SnazzyInfoWindow({
