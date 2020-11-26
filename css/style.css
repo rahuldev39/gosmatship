@@ -4056,6 +4056,32 @@ h6 {
 ul.checklist li{
   position: relative;
 }
-ul.checklist li::before{
+.no-cta.footer-area:before {
+  height: 100% !important;
+}
 
+.how-work-item {
+  max-width: 20%;
+  flex-basis: 20%;
+  text-align: center;
+  padding: 20px;
+}
+@media(max-width:992px){
+  .how-work-item {
+    max-width:33.33%;
+    flex-basis: 33.33%;
+  }
+}
+@media(max-width:768px){
+  .how-work-item {
+    max-width:50%;
+    flex-basis: 50%;
+  }
+}
+
+@media(max-width:512px){
+  .how-work-item {
+    max-width:100%;
+    flex-basis: 100%;
+  }
 }
