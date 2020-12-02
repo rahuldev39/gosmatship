@@ -4085,3 +4085,63 @@ ul.checklist li{
     flex-basis: 100%;
   }
 }
+
+
+.footer-social ul li {
+  display: inline-block;
+  list-style: none;
+}
+
+.footer-social ul li a {
+  display: block;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -ms-border-radius: 50%;
+  border: 1px solid #525164;
+  text-align: center;
+  color: #fff;
+  font-size: 14px;
+  padding: 7px 0;
+  margin: 0 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.footer-social ul li a:hover {
+  background-color: #e72727;
+  border-color: #e72727;
+}
+.footer-social ul li a:hover i{
+  color: white;
+}
+.footer-menu ul li {
+  display: inline-block;
+}
+
+.footer-menu ul li a {
+  color: #ffffff;
+  margin: 0 20px;
+  position: relative;
+}
+.footer-menu ul li:first-child a:before{
+  display: none;
+}
+.footer-menu ul li a:before {
+  position: absolute;
+  left: -24px;
+  top: 1px;
+  bottom: 0;
+  margin: auto;
+  content: "";
+  background: #ffffff1f;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -ms-border-radius: 50%;
+}
+.copyright-text a {
+  color: #e72727;
+}
