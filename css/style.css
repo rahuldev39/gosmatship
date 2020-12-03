@@ -4145,3 +4145,7 @@ ul.checklist li{
 .copyright-text a {
   color: #e72727;
 }
+.copyright-text {
+  background-color: #21202d;
+  font-size: 12px;
+}
