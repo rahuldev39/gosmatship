@@ -4149,3 +4149,24 @@ ul.checklist li{
   background-color: #21202d;
   font-size: 12px;
 }
+.package-accordion .card-header {
+  background-color: rgb(38 37 51);;
+}
+.collapsible-alert{
+
+}
+
+.alert-warning {
+  color: #262533;
+  background-color: #fff3cd;
+  border-color: #e65130;
+}
+.collapsible-alert i.fa-info-circle {
+  font-size: 22px;
+  color: #e65130;
+}
+.collapse-alert-toggle {
+  line-height: 14px;
+  color: #262533;
+    font-size: 27px;
+}
