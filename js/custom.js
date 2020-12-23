@@ -35,6 +35,11 @@
   $(window).on("load", function () {
     $(".counter").counterUp({ delay: 10, time: 1000 });
   });
+
+  $(window).on('load', function() {
+    $('.loader').fadeOut();
+    $('.loader-container').delay(350).fadeOut('slow');
+  });
   
 
   $(".partners-list").owlCarousel({
